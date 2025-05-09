@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-  const { LoginPage } = require('../pages/LoginPage');
+  const { LoginPage } = require('../pages/loginPage');
   const { InventoryPage } = require('../pages/inventoryPage');
   const { CartPage } = require('../pages/cartPage');
   const { CheckoutPage } = require('../pages/checkoutPage');
@@ -15,7 +15,7 @@ const { test, expect } = require('@playwright/test');
       const checkout = new CheckoutPage(page);
       const finish = new FinishPage(page);
   
-      await test.step('Login', async () => {
+      await test.step('login', async () => {
         await login.goto();
         await login.login(usuarioValido.username, usuarioValido.password);
         await expect(page).toHaveURL(/inventory/);

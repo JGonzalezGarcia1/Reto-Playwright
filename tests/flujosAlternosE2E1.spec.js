@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const { datosCheckout } = require('../fixtures/datosCheckoutFixture');
 
-// Escenarios alternos E2E 1
+// Escenarios alternos 
 test.describe('Escenarios alternos - Flujo de compra', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('https://www.saucedemo.com/');
@@ -22,7 +22,7 @@ test.describe('Escenarios alternos - Flujo de compra', () => {
     await page.locator('[data-test="continue"]').click();
 
     const total = await page.locator('.summary_total_label').textContent();
-    expect(total).toContain('32.39'); // Total esperado por solo un producto
+    expect(total).toContain('32.39'); 
   });
 
   test('Acceder a checkout sin productos', async ({ page }) => {

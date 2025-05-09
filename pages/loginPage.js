@@ -8,7 +8,7 @@ class LoginPage {
     }
   
     async goto() {
-      await this.page.goto('/');
+      await this.page.goto('https://www.saucedemo.com/');
     }
   
     async login(username, password) {
