@@ -1,0 +1,25 @@
+# Node modules
+node_modules/
+
+# Playwright reports
+playwright-report/
+test-results/
+*.zip
+
+# Environment or temp files
+.env
+.DS_Store
+.vscode/
+.idea/
+*.log
+
+# Output files
+*.mp4
+*.webm
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# VSCode settings
+.vscode/
