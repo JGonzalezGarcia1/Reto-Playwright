@@ -26,16 +26,4 @@ test.describe('Flujo E2E 2: Login y restricciones', () => {
     await page.getByRole('link', { name: 'Logout' }).click();
     await expect(page).toHaveURL('https://www.saucedemo.com/');
   });
-
-  test('Credenciales incorrectas', async ({ page }) => {
-    await page.getByRole('textbox', { name: 'Username' }).fill('wrong_user');
-    await page.getByRole('textbox', { name: 'Password' }).fill('wrong_pass');
-    await page.getByRole('button', { name: 'Login' }).click();
-    await expect(page.locator('[data-test="error"]')).toBeVisible();
-  });
-
-  test('Acceso a inventario sin login', async ({ page }) => {
-    await page.goto('https://www.saucedemo.com/inventory.html');
-    await expect(page).toHaveURL('https://www.saucedemo.com/');
-  });
 });

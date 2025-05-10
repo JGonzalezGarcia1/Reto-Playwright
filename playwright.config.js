@@ -16,7 +16,7 @@ use: {
 },    
     projects: [
         { name: 'chromium', use: { browserName: 'chromium' } },
-        //{ name: 'firefox', use: { browserName: 'firefox' } },    
+        { name: 'firefox', use: { browserName: 'firefox' } },    
         //{ name: 'webkit', use: { browserName: 'webkit' } },
     ],
     reporter: [['html', { outputFolder: 'playwright-report' }]],

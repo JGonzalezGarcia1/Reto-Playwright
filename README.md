@@ -43,31 +43,23 @@ Este proyecto automatiza flujos End-to-End (E2E) de la aplicación SauceDemo usa
 
 ✔️ Flujo E2E 1: Compra Exitosa
 
--Login
+✔️ Flujo E2E 2: Login y Validación de Restricciones de usuario
 
--Agregar productos
+✔️ Escenarios Alternos para ambos flujos( E2E 1 Y E2E 2)
 
--Validar carrito
+## 📌 Datos de prueba
 
--Checkout
+### 1️⃣ Usuario estándar 
 
--Confirmar compra
+   Usuario: standard_user 
 
-✔️ Flujo E2E 2: Validación de Restricciones de Login
+   Contraseña: secret_sauce
 
--Validar campos vacíos
+### 2️⃣ Usuario bloqueado
 
--Usuario bloqueado
+   Usuario: locked_out_user 
 
--Usuario correcto y logout
-
-✔️ Escenarios Alternos
-
--Eliminar producto antes del checkout
-
--Acceder al checkout sin productos
-
--Validar visibilidad de precios e impuestos
+   Contraseña: secret_sauce
 
 
 ## Sitio oficial SauceDemo
